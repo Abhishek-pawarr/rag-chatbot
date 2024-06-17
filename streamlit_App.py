@@ -11,12 +11,12 @@ import os
 import tempfile
 import torch
 
-st.set_page_config(page_title="Document Genie", layout="wide")
+st.set_page_config(page_title="CHATBOT WITH RAG", layout="wide")
 
 st.markdown("""
-## Document Genie: Get instant insights from your Documents
+## Document : Get instant insights from your Documents
 
-This chatbot is built using the Retrieval-Augmented Generation (RAG) framework, leveraging Google's Generative AI model Gemini-PRO. It processes uploaded PDF documents by breaking them down into manageable chunks, creates a searchable vector store, and generates accurate answers to user queries. This advanced approach ensures high-quality, contextually relevant responses for an efficient and effective user experience.
+This chatbot is built using the Retrieval-Augmented Generation (RAG) framework, using zephyr 7b beta LLM Model. It processes uploaded PDF documents by breaking them down into manageable chunks, creates a searchable vector store, and generates accurate answers to user queries. This advanced approach ensures high-quality, contextually relevant responses for an efficient and effective user experience.
 
 ### How It Works
 
@@ -114,7 +114,7 @@ def user_input(user_question, llm):
     st.write("Reply: ", response)
 
 def main():
-    st.header("AI clone chatbot💁")
+    st.header("AI RAG chatbot💁")
     llm = load_llm_model()
 
     user_question = st.text_input("Ask a Question from the PDF Files", key="user_question")
