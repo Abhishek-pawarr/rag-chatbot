@@ -1,10 +1,8 @@
 ##    chatbot with RAG
 
-# Document Genie
-
 ## Overview
 
-Document Genie is an interactive chatbot application that uses Retrieval-Augmented Generation (RAG) to provide precise answers to questions about the content of uploaded PDF documents. It leverages advanced machine learning models, including Google's Generative AI model Gemini-PRO, to deliver contextually relevant responses efficiently.
+ROBO is an interactive chatbot application that uses Retrieval-Augmented Generation (RAG) to provide precise answers to questions about the content of uploaded PDF documents. It leverages advanced machine learning models, including Google's Generative AI model Gemini-PRO, to deliver contextually relevant responses efficiently.
 
 ## Features
 
@@ -50,7 +48,7 @@ Document Genie is an interactive chatbot application that uses Retrieval-Augment
 
 ## Code Structure
 
-- **`app.py`**: The main application file containing the Streamlit interface and logic for document processing and question answering.
+- **`streamlit_App.py`**: The main application file containing the Streamlit interface and logic for document processing and question answering.
 - **Functions**:
   - `load_llm_model()`: Loads the local LLM model with the specified configuration.
   - `load_embeddings()`: Loads the embeddings model.
@@ -67,9 +65,6 @@ Document Genie is an interactive chatbot application that uses Retrieval-Augment
 - Adjust the paths and configurations as needed for your environment.
 - The application uses GPU for model inference if available. Ensure the necessary GPU drivers and libraries are installed.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
 
